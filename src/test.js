@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports.test = async (event) => {
+const test = async (event) => {
   return {
     statusCode: 200,
     body: JSON.stringify(
@@ -13,3 +13,7 @@ module.exports.test = async (event) => {
     ),
   };
 };
+
+module.exports = {
+  handler: test
+}
