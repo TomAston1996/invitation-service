@@ -11,6 +11,7 @@ functions:
   test:
     handler: src/test.handler
     events:
-      - http:
-        path: /test
-        method: get
+      - httpApi:
+          path: /test
+          method: get
+          cors: true
